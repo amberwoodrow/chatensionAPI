@@ -286,4 +286,4 @@ var MessageForm = React.createClass({
   }
 });
 
-React.render(React.createElement(Chatension, { url: 'http://localhost:3000/api' }), document.getElementById('chat'));
+React.render(React.createElement(Chatension, { url: 'https://chatension.herokuapp.com/api' }), document.getElementById('chat'));
