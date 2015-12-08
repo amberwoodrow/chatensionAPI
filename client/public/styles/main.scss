@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+#chat {
+  font-family: 'Nunito', Helvetica;
+  width: 90%;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.33, rgb(160, 106, 177)), color-stop(0.67, #645B7E));
+  transition: all linear .2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.chatension {
+  background: #29243F;
+  width: 96%;
+  margin: auto;
+  top: 0px;
+  right: 2px;
+  left: 2px;
+  bottom: 2px;
+  position: absolute;
+  overflow: auto;
+}
+
+.chatensionLogo {
+  color: rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 6px #6F629D, 0px 0px 0px #000, 1px 1px #6F629D;
+  background-image: -webkit-linear-gradient(0deg, hsla(175,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 50%, hsla(25,70%,40%,1) 50%, hsla(25,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 83.333333%, hsla(300,70%,40%,1) 83.333333%);
+  background-image: linear-gradient(to right, hsla(175,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 50%, hsla(25,70%,40%,1) 50%, hsla(25,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 83.333333%, hsla(300,70%,40%,1) 83.333333%);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-color: #645B7E;
+  color: rgba(38, 32, 59, 0.8);
+  text-align: center;
+  border-bottom: 1px solid rgb(17, 17, 17);
+  top: 0;
+  position: fixed;
+  font-size: 22px;
+  line-height: 45px;
+  margin-top: 0px;
+  width: 86.4%;
+}
+
+.chatensionNameBox {
+  text-align: center;
+}
+
+.chatensionNameInput, .chatensionMessageInput {
+  -webkit-transition: all 0.30s ease-in-out;
+  font-size: larger;
+  outline: none;
+  color: #FFFFFF;
+  margin: auto;
+  border: solid 1px #111;
+  background: #332F3C;
+  padding: 5px;
+  box-shadow: 0 1px 2px rgba(161, 156, 156, 0.1) inset;
+}
+
+.chatensionNameInput {
+  width: 220px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 100px;
+}
+ 
+.chatensionNameInput:focus, .chatensionMessageInput:focus {
+  box-shadow: 0 0 5px rgba(111, 98, 157, 1);
+  border: 1px solid rgba(111, 98, 157, 1);
+}
+
+.chatensionNameSubmitBtn, .chatensionMessageSubmitBtn {
+  color: #FFF;
+  font-size: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: solid 1px #111;
+  margin: auto;
+  background: #443E59;
+  box-shadow: rgb(111, 98, 157) 0px 1px 0px inset, rgba(0, 0, 0, 0.298039) 0px 1px 1px;
+  transition: background-color 0.5s ease;
+}
+
+.chatensionNameSubmitBtn {
+  font-size: larger;
+  line-height: 1;
+  padding: .6em .8em;
+  width: 144px;
+  border-radius: 5px;
+}
+
+.chatensionNameSubmitBtn:hover, .chatensionMessageSubmitBtn:hover {
+  box-shadow: rgb(91, 80, 128) 0px 1px 0px inset, rgba(0, 0, 0, 0.298039) 0px 1px 1px;
+  background-color: rgb(50, 44, 70);
+}
+
+.chatensionNameSubmitBtn:focus, .chatensionMessageSubmitBtn:focus {
+  outline: none;
+}
+
+.chatensionMessageList {
+  margin-top: 50px;
+  background: #29243F;
+  margin-bottom: 60px;
+}
+
+
+.chatensionMessageInput {
+  width: 80%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.chatensionMessageSubmitBtn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px;
+  width: 12%;
+  text-shadow: rgb(111, 98, 157) 1px 1px 6px, rgb(0, 0, 0) 0px 0px 0px, rgb(111, 98, 157) 1px 1px;
+  color: #2A2440;
+}
+
+.chatensionMessageFormDiv {
+  position: fixed;
+  text-align: center;
+  bottom: 2px;
+  background: #29243F;
+  width: 86%;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgb(41, 36, 63) 70%);
+  padding-top: 20px;
+}
+
+.chatensionMessageForm {
+  width: 100%;
+}
+
+.chatensionMessage {
+  margin: 5px 0 5px 10px;
+  color: #ffffff; 
+}
+
+.chatensionMessageName span {
+  font-weight: bold;
+  color: rgb(255, 161, 60);
+}
+
+/* Arrow */
+
+.chatensionArrowBox {
+  border: 1px solid rgb(31, 173, 102);
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  transform: rotate(90deg);
+  width: 40px;
+  border-left: none;
+  top: 100px;
+  width: 45px;
+  background: rgb(31, 173, 162);
+  height: 24px;
+  position: fixed;
+  left: 86.6%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: rgb(88, 225, 214) 1px 1px 0px inset, rgba(0, 0, 0, 0) 0px 1px 1px;
+  transition: all linear .2s;
+}
+
+.chatensionArrow {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+  top: 5px;
+  left: 14px;
+  width: 0px;
+  text-shadow: 1px 1px 6px #6F629D, 0px 0px 0px #000, 1px 1px #6F629D;
+}
+
+.chatensionArrowBox .chatensionArrow.dir-one {
+  border-top: 10px solid rgb(45, 39, 69);
+}
+
+.chatensionArrowBox .chatensionArrow.dir-two {
+  border-bottom: 10px solid rgb(45, 39, 69);
+}
