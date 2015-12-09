@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+/* zip -r extension.zip extension */
 #chat {
   font-family: 'Nunito', Helvetica;
-  width: 285px;
+  width: 288px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.33, #a06ab1), color-stop(0.67, #645B7E));
   transition: all linear .2s;
   top: 0;
@@ -12,12 +13,12 @@
 
 .chatension {
   background: #29243F;
-  width: 96%;
+  width: 276px;
   margin: auto;
   top: 0px;
   right: 2px;
   left: 2px;
-  bottom: 2px;
+  bottom: 4px;
   position: absolute;
   overflow: auto; }
 
@@ -38,7 +39,7 @@
   font-size: 22px;
   line-height: 45px;
   margin-top: 0px;
-  width: 273px; }
+  width: 276px; }
 
 .chatensionNameBox {
   text-align: center; }
@@ -93,10 +94,10 @@
 .chatensionMessageList {
   margin-top: 50px;
   background: #29243F;
-  margin-bottom: 60px; }
+  margin-bottom: 50px; }
 
 .chatensionMessageInput {
-  width: 80%;
+  width: 216px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; }
 
@@ -104,16 +105,17 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 5px;
-  width: 12%;
+  width: 30px;
   text-shadow: #6f629d 1px 1px 6px, black 0px 0px 0px, #6f629d 1px 1px;
   color: #2A2440; }
 
 .chatensionMessageFormDiv {
   position: fixed;
   text-align: center;
-  bottom: 2px;
+  bottom: 4px;
+  padding-bottom: 6px;
   background: #29243F;
-  width: 86%;
+  width: 276px;
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #29243f 70%);
   padding-top: 20px; }
 
@@ -142,7 +144,7 @@
   background: #1fada2;
   height: 24px;
   position: fixed;
-  left: 275px;
+  left: 278px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   box-shadow: #58e1d6 1px 1px 0px inset, transparent 0px 1px 1px;
