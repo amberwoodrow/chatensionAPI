@@ -1,8 +1,8 @@
-Pusher.log = function (message) {
-  if (window.console && window.console.log) {
-    window.console.log(message);
-  }
-};
+// Pusher.log = function (message) {
+//   if (window.console && window.console.log) {
+//     window.console.log(message);
+//   }
+// };
 
 var pusher = new Pusher('d3ff643b6b3d608b70fb', {
   encrypted: true
