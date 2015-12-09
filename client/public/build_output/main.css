@@ -1,7 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-#theirBody {
-  height: 100%; }
-
 #chat {
   font-family: 'Nunito', Helvetica;
   width: 285px;
@@ -41,7 +38,7 @@
   font-size: 22px;
   line-height: 45px;
   margin-top: 0px;
-  width: 86.4%; }
+  width: 273px; }
 
 .chatensionNameBox {
   text-align: center; }
