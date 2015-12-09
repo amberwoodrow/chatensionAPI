@@ -86,6 +86,7 @@ router.post('/api/message', function(req, res, next) {
 
       newMessage.save(function(err, data){
         if(err){ res.json({'message':err}); }
+        res.json({"Success": "Messaged saved"});
       });
     });
   });
