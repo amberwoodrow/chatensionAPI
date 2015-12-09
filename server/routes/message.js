@@ -22,8 +22,13 @@ pusher.port = 443;
 
 router.get('/', function(req, res, next) {
   var currentUrl = req.query.currentUrl;
-  currentUrl = currentUrl.toString();
-  res.render("index", {currentUrl: currentUrl});
+  if (currentUrl) {
+    currentUrl = currentUrl.toString();
+    res.render("chatTemplate", {currentUrl: currentUrl});
+  } else {
+    res.render("index");
+  }
+
 });
   // gets zee code to put in iframe
 
