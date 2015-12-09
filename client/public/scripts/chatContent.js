@@ -23,13 +23,13 @@ var Chatension = React.createClass({
   },
   arrowClickHandler: function() {
     if (this.state.chatensionArrowClass === "chatensionArrow dir-one") {
-      $('#chat').css('left', '-86.6%;');
+      $('#chat').css('left', '-285px;');
       $('.chatensionArrowBox').css('left', '-3%');
       this.setState({chatensionArrowClass: "chatensionArrow dir-two"});
     } else {
       this.setState({chatensionArrowClass: "chatensionArrow dir-one"});
       $('#chat').css('left', '0px');
-      $('.chatensionArrowBox').css('left', '86.6%');
+      $('.chatensionArrowBox').css('left', '285px');
     }
   },
   getInitialState: function() {
