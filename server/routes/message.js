@@ -1,5 +1,5 @@
-// var dotenv = require('dotenv');
-// dotenv.load();
+var dotenv = require('dotenv');
+dotenv.load();
 
 var express = require('express');
 var router = express.Router();
@@ -22,7 +22,7 @@ pusher.port = 443;
 
 router.get('/', function(req, res, next) {
   var currentUrl = req.query.currentUrl;
-  if (currentUrl) {
+  if (currentUrl !== undefined) {
     currentUrl = currentUrl.toString();
     res.render("chatTemplate", {currentUrl: currentUrl});
   } else {
